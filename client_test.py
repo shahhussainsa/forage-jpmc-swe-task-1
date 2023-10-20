@@ -1,6 +1,7 @@
 import unittest
 from client3 import getDataPoint
 
+
 class ClientTest(unittest.TestCase):
   def test_getDataPoint_calculatePrice(self):
     quotes = [
@@ -18,6 +19,12 @@ class ClientTest(unittest.TestCase):
 
 
   """ ------------ Add more unit tests ------------ """
+# quotes = [
+#   {'top_ask' : {'prince': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'}
+# ]
+for quote in quotes:
+  self.assertEqual{getDataPoint(quote).{quote['stock'], quote['top_bit']['price'], quote['top_ask']['price'],{quote['top_bit']['price'] + quote['top_ask']['price']}/2}}
+
 
 
 
